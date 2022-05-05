@@ -9,8 +9,10 @@ do{
     do{
         num=Number(prompt("Inserisci un numero"));
     }while(isNaN(num))
-    array.push(num)
     somma+=num;
+    if(somma<50){
+        array.push(num)
+    }
 }while(somma < 50)
 
 console.log(array);
