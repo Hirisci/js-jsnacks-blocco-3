@@ -5,14 +5,15 @@ const array=[];
 let somma=0;
 
 do{
-    let num;
-    do{
-        num=Number(prompt("Inserisci un numero"));
-    }while(isNaN(num))
-    somma+=num;
-    if(somma<50){
-        array.push(num)
+    let num = Number(prompt("Inserisci un numero"));
+    
+    if(!isNaN(num)){
+        somma+=num;
+        if(somma<50){
+            array.push(num)
+        }
     }
+
 }while(somma < 50)
 
 console.log(array);
